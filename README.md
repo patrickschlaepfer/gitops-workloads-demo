@@ -2,6 +2,10 @@
 
 This repository demonstrates how Helm based work loads can be managed by ArgoCD. 
 
+## OpenShift
+
+    $ oc adm policy add-cluster-role-to-user cluster-admin  system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller -n openshift-gitops 
+
 ## Application setup
 
 The configuration for each application is stored under the [apps](apps) directory. There is a [chart](apps/demo1/chart) directory to store the helm chart of the application and an [envs](apps/demo1/envs) directory to record the helm values file to be used when deploying to the "dev", "test" or "prod" environments.
