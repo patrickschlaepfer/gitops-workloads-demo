@@ -9,6 +9,7 @@ dependencies:
   #
   # https://devspace.sh/component-chart/docs/introduction
   #
+  # A change to see if something happens
   - name: component-chart
     repository: https://charts.devspace.sh
     version: 0.8.4
