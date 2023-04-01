@@ -31,7 +31,7 @@ spec:
   - git:
       files:
       - path: apps/**/envs/values-dev.yaml
-      repoURL: git@github.com:patrickschlaepfer/gitops-workloads-demo.git
+      repoURL: https://github.com/patrickschlaepfer/gitops-workloads-demo.git
       requeueAfterSeconds: 20
       revision: ""
       template:
@@ -53,7 +53,7 @@ spec:
         namespace: '{{ path[1] }}'
         server: 'https://kubernetes.default.svc'
       source:
-        repoURL: git@github.com:patrickschlaepfer/gitops-workloads-demo.git
+        repoURL: https://github.com/patrickschlaepfer/gitops-workloads-demo.git
         path: '{{ path }}/../chart'
         targetRevision: 'main'
         helm:
